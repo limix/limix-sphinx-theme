@@ -1,1 +1,1 @@
-# -limix-sphinx-theme
+# limix-sphinx-theme
