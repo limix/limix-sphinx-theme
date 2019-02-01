@@ -5,6 +5,8 @@ limix boostrap theme
 A flexible and fast generalised mixed model toolbox.
 """
 
+from ._testit import test
+
 __version__ = "0.0.1"
 
 
@@ -25,4 +27,4 @@ def setup(app):
     )
 
 
-__all__ = ["__version__", "setup", "get_html_theme_path"]
+__all__ = ["__version__", "setup", "get_html_theme_path", "test"]
