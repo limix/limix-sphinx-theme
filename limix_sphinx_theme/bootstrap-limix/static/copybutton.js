@@ -1,19 +1,28 @@
+/* This file is basically a copy of copybutton.js from
+ * <https://github.com/astropy/astropy-sphinx-theme>.
+ */
+[astropy-sphinx-theme]() with minor
+modifications to work with
+[sphinx\_rtd\_theme](https://github.com/rtfd/sphinx_rtd_theme).
+
 $(document).ready(function() {
     /* Add a [>>>] button on the top-right corner of code samples to hide
      * the >>> and ... prompts and the output and thus make the code
      * copyable. */
     var div = $('.highlight-python .highlight,' +
                 '.highlight-python3 .highlight,' +
+                '.highlight-pycon .highlight,' +
                 '.highlight-default .highlight')
+
     var pre = div.find('pre');
 
     // get the styles from the current theme
     pre.parent().parent().css('position', 'relative');
     var hide_text = 'Hide the prompts and output';
     var show_text = 'Show the prompts and output';
-    var border_width = pre.css('border-top-width');
-    var border_style = pre.css('border-top-style');
-    var border_color = pre.css('border-top-color');
+    var border_width = pre.parent().parent().css('border-top-width');
+    var border_style = pre.parent().parent().css('border-top-style');
+    var border_color = pre.parent().parent().css('border-top-color');
     var button_styles = {
         'cursor':'pointer', 'position': 'absolute', 'top': '0', 'right': '0',
         'border-color': border_color, 'border-style': border_style,
