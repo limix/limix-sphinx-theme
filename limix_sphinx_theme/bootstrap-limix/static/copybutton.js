@@ -1,10 +1,6 @@
 /* This file is basically a copy of copybutton.js from
  * <https://github.com/astropy/astropy-sphinx-theme>.
  */
-[astropy-sphinx-theme]() with minor
-modifications to work with
-[sphinx\_rtd\_theme](https://github.com/rtfd/sphinx_rtd_theme).
-
 $(document).ready(function() {
     /* Add a [>>>] button on the top-right corner of code samples to hide
      * the >>> and ... prompts and the output and thus make the code
