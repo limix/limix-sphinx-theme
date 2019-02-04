@@ -7,7 +7,7 @@ A flexible and fast generalised mixed model toolbox.
 
 from ._testit import test
 
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 
 
 def get_html_theme_path():
